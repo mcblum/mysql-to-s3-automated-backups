@@ -90,7 +90,7 @@ touch mysql-backups.sh
 ```
 Use your favorite text editor and open the file:
 ```bash
-vim mydql-backups.sh
+vim mysql-backups.sh
 ```
 Paste the following script:
 ```bash
