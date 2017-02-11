@@ -103,7 +103,7 @@ S3_BUCKET_NAME=your-s3-bucket-name
 S3_DIRECTORY_NAME=the-directory-you-want
 DAYS_TO_KEEP=7
 MYSQL_USER=root
-MYSQL_PASSWORD=your_root_password
+MYSQL_PASSWORD=your_mysql_root_password
 MYSQL=/usr/bin/mysql
 MYSQLDUMP=/usr/bin/mysqldump
 
