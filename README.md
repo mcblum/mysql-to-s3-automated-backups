@@ -135,6 +135,24 @@ You'll need to make the script excecutable so run `chmod +x ./mysql-backup.sh` b
 
 Final Thoughts
 ======
+Obviously this script is more valuble if it runs automatically, so change to your Cron directory:
+```bash
+cd /etc/cron.d
+```
+and add a cron job:
+```bash
+vim mysql_hourly_backup
+```
+
+When your text editor opens, paste the following:
+```bash
+0 */1 * * * root /opt/scripts/mysql-backup.sh
+```
+
+That will run the script every hour. If you'd like to change the timing, read up on Cron and go to town.
+
+Final Thoughts
+======
 That's it! Your setup should be complete. Check your S3 the next day just to make sure it's running, and enjoy the piece of mind.
 
 Matt
