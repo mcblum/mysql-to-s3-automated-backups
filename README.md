@@ -34,8 +34,8 @@ CentOS 7
 ```bash
 wget http://ufpr.dl.sourceforge.net/project/s3tools/s3cmd/1.6.1/s3cmd-1.6.1.tar.gz
 tar xzf s3cmd-1.6.1.tar.gz
-wget http://ufpr.dl.sourceforge.net/project/s3tools/s3cmd/1.6.1/s3cmd-1.6.1.tar.gz
-tar xzf s3cmd-1.6.1.tar.gz
+cd s3cmd-1.6.1
+sudo python setup.py install
 ```
 
 Now that that's done, you'll want to sign in to your Amazon Web Services account and select the service `IAM`. Create a new IAM user and select "Programmatic Access". When it asks your for permissions, select "Attach inline policy" in the lower right and use this policy:
